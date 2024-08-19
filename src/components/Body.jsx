@@ -1,12 +1,13 @@
-import React from 'react'
-import Greet from './Greet'
+import React from "react";
+import Greet from "./Greet";
 
 const Body = () => {
   return (
     <>
-      <Greet/>
+      <Greet />
+      
     </>
-  )
-}
+  );
+};
 
-export default Body
+export default Body;

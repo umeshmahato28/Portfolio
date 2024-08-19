@@ -1,14 +1,17 @@
-import React from 'react'
-import Header from './components/Header'
-import Body from './components/Body'
+import React from "react";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import { ThemeProvider } from "./utils/Theme";
+
 
 const App = () => {
   return (
-    <div>
-    <Header/>
-    <Body/>
-    </div>
-  )
-}
+    <ThemeProvider>
+      <Header />
+      <Body />
+      
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;
