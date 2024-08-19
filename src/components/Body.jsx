@@ -5,7 +5,7 @@ const Body = () => {
   return (
     <>
       <Greet />
-      
+  
     </>
   );
 };
