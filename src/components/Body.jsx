@@ -1,6 +1,7 @@
 import React from 'react'
 import Greet from './Greet'
 
+
 const Body = () => {
   return (
     <>

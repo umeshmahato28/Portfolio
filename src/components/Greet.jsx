@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import GraphemeSplitter from "grapheme-splitter";
+import { TypeAnimation } from "react-type-animation"; // Import TypeAnimation component
 
+const splitter = new GraphemeSplitter();
 
 const Greet = () => {
   const greetings = [
@@ -11,40 +14,34 @@ const Greet = () => {
     "Ciao",
     "Olá",
     "你好 (Nǐ hǎo)",
-    "こんにちは (Konnichiwa)",
-    "안녕하세요 (Annyeonghaseyo)",
-    "Здравствуйте (Zdravstvuyte)",
-    "مرحبا (Marhaban)",
-    "Γειά σας (Yia sas)",
+    "Konnichiwa",
+    "Marhaban",
+    "Yia sas",
     "Merhaba",
     "Habari",
-    "สวัสดี (Sawasdee)",
+    "Sawasdee",
     "Xin chào",
-    "שלום (Shalom)",
-    "Hallo",
+    "Shalom",
     "Hej",
   ];
 
-  const [currentGreeting, setCurrentGreeting] = useState(greetings[0]);
-  const [index, setIndex] = useState(0);
-
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex((prevIndex) => {
-        const nextIndex = (prevIndex + 1) % greetings.length;
-        setCurrentGreeting(greetings[nextIndex]);
-        return nextIndex;
-      });
-    }, 1000); // Change greeting every 3 seconds
-
-    // Cleanup interval on component unmount
-    return () => clearInterval(intervalId);
-  }, [greetings]);
+//     console.log("Grapheme split example: ",
+      //  splitter.splitGraphemes("Hello"));
+  }, []);
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-gray-800">
-        <span className="typing-animation">{currentGreeting}</span>
+    <div className="flex items-center justify-center  h-screen bg-[#ECCA9C] dark:bg-zinc-950">
+      <h1 className="text-6xl md:text-8xl font-bold text-zinc-900 dark:text-white">
+        <TypeAnimation
+          splitter={(str) => {
+            console.log("Splitting string: ", str);
+            return splitter.splitGraphemes(str);
+          }}
+          sequence={greetings.flatMap((greeting) => [greeting, 2000])}
+      //     style={{ fontSize: "6rem" }}
+          repeat={Infinity}
+        />
       </h1>
     </div>
   );
