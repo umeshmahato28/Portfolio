@@ -9,7 +9,6 @@ const App = () => {
     <ThemeProvider>
       <Header />
       <Body />
-      
     </ThemeProvider>
   );
 };

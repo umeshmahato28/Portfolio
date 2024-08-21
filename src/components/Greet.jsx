@@ -47,15 +47,17 @@ const Greet = () => {
 
   return (
     <div
-      className={`absolute w-full h-5/6 flex items-center justify-center ${
+      className={`absolute w-full h-3/4 flex items-center justify-center ${
         isDarkMode ? "bg-zinc-950" : "bg-[#ECCA9C]"
       }`}
     >
       {/* Particles as background */}
-      <ParticlesComponent darkMode={isDarkMode ? "dark" : "light"} />
+      <div className="absolute top-0 left-0 w-full h-full ">
+        <ParticlesComponent darkMode={isDarkMode ? "dark" : "light"} />
+      </div>
 
       {/* Greeting Text */}
-      <div className="relative z-10  items-center">
+      <div className="relative z-1  items-center">
         <div className="flex text-5xl px-4 md:px-0 md:text-8xl font-bold text-zinc-900 dark:text-white mr-4">
           <TypeAnimation
             splitter={(str) => splitter.splitGraphemes(str)}
