@@ -91,7 +91,7 @@ const ParticlesComponent = (props) => {
     [isDarkMode]
   );
   return (
-    <div className="absolute inset-0  w-full">
+    <div className="   w-full">
       <Particles id={props.id} init={particlesLoaded} options={options} />
     </div>
   );

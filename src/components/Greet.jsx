@@ -11,34 +11,27 @@ const Greet = () => {
   const { isDarkMode } = useTheme();
 
   const greetings = [
-    "Hello",
-    "Namaste",
-    "Sat Sri Akal",
-    "Namaskār",
-    "Vaṇakkam",
-    "Salaam",
-    "Namaskāraṁ",
-    "Hola",
-    "Bonjour",
-    "Hallo",
-    "Ciao",
-    "Olá",
-    "你好 (Nǐ hǎo)",
-    "Konnichiwa",
-    "Marhaban",
-    "Yia sas",
-    "Konnichiwa",
-    "Marhaban",
-    "Yia sas",
-    "Merhaba",
-    "Habari",
-    "Sawasdee",
-    "Sawasdee",
-    "Xin chào",
-    "Shalom",
-    "Shalom",
-    "Hej",
+    "नमस्ते", // Hindi
+    "வணக்கம்", // Tamil
+    "నమస్కారం", // Telugu
+    "নমস্কাৰ", // Assamese
+    "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Punjabi
+    "നമസ്കാരം", // Malayalam
+    "ನಮಸ್ಕಾರ", // Kannada
+    "আদাব", // Bengali
+    "નમસ્તે", // Gujarati
+    "नमस्कार", // Marathi
+    "ਜੈ ਜਿਨੇਂਦ੍ਰ", // Rajasthani/Marwari
+    "ସୁପ୍ରଭାତ", // Odia
+    "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Sindhi
+    "खोलो साना", // Kashmiri
+    "प्रणाम", // Bhojpuri
+    "आदाब", // Urdu
+    "जय जिनेंद्र", // Jain
+    "हरी ओम", // Sanskrit
+    "सुप्रभात", // Konkani
   ];
+  
 
   useEffect(() => {
     // Example of logging split graphemes
