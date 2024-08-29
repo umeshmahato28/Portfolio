@@ -12,8 +12,6 @@ const Greet = () => {
 
   const greetings = [
     "नमस्ते", // Hindi
-    "வணக்கம்", // Tamil
-    "నమస్కారం", // Telugu
     "নমস্কাৰ", // Assamese
     "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Punjabi
     "നമസ്കാരം", // Malayalam
@@ -23,8 +21,6 @@ const Greet = () => {
     "नमस्कार", // Marathi
     "ਜੈ ਜਿਨੇਂਦ੍ਰ", // Rajasthani/Marwari
     "ସୁପ୍ରଭାତ", // Odia
-    "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Sindhi
-    "खोलो साना", // Kashmiri
     "प्रणाम", // Bhojpuri
     "आदाब", // Urdu
     "जय जिनेंद्र", // Jain
