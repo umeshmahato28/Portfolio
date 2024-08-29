@@ -14,8 +14,6 @@ const Greet = () => {
     "नमस्ते", // Hindi
     "নমস্কাৰ", // Assamese
     "ਸਤ ਸ੍ਰੀ ਅਕਾਲ", // Punjabi
-    "നമസ്കാരം", // Malayalam
-    "ನಮಸ್ಕಾರ", // Kannada
     "আদাব", // Bengali
     "નમસ્તે", // Gujarati
     "नमस्कार", // Marathi
