@@ -6,7 +6,10 @@ const About = () => {
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nihil
       nesciunt fugiat. Quas placeat aspernatur ullam, dolores dicta at dolorem,
       veritatis odit necessitatibus fugiat, commodi fuga aliquid repellendus
-      mollitia temporibus.
+      mollitia temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Mollitia tempore recusandae architecto commodi, inventore sint
+      voluptatem laudantium, id corrupti porro accusantium voluptatibus qui
+      facilis optio beatae alias illum molestiae maiores.
     </div>
   );
 };
