@@ -27,25 +27,28 @@ const ParticlesComponent = (props) => {
           value: "",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 200,
       interactivity: {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "push", // push grab repulse
           },
           onHover: {
             enable: true,
-            mode: "grab",
+            mode: "repulse",
           },
         },
         modes: {
           push: {
             distance: 200,
-            duration: 15,
+            duration: 10,
           },
           grab: {
             distance: 150,
+          },
+          repulse: {
+            distance: 80,
           },
         },
       },
@@ -67,7 +70,7 @@ const ParticlesComponent = (props) => {
             default: "bounce",
           },
           random: true,
-          speed: 1,
+          speed: 5,
           straight: false,
         },
         number: {
@@ -91,8 +94,13 @@ const ParticlesComponent = (props) => {
     [isDarkMode]
   );
   return (
-    <div className="   w-full">
-      <Particles id={props.id} init={particlesLoaded} options={options} />
+    <div className=" absolute inset-0 ">
+      <Particles
+        id={props.id}
+        init={particlesLoaded}
+        options={options}
+        className="h-full w-full"
+      />
     </div>
   );
 };

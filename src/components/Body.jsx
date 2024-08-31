@@ -6,8 +6,8 @@ import About from "./About";
 const Body = () => {
   return (
     <>
-      <About/>
       <Greet />
+      <About/>
     </>
   );
 };
