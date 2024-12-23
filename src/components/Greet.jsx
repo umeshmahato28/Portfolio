@@ -35,17 +35,24 @@ const Greet = () => {
       <ParticlesComponent />
 
       {/* Greeting Text */}
-      <div className="absolute z-10 flex items-center">
-        <div className="flex text-5xl px-4 md:px-0 md:text-8xl select-none font-bold text-zinc-900 dark:text-white mr-4">
-          <TypeAnimation
-            splitter={(str) => splitter.splitGraphemes(str)}
-            sequence={greetings.flatMap((greeting) => [greeting, 2000])}
-            repeat={Infinity}
-            cursor=""
-          />
-          <p className="text-5xl md:text-8xl font-bold text-zinc-900 dark:text-white">!</p>
-        </div>
-      </div>
+      <div className="absolute z-10 flex flex-col items-center">
+  {/* Greeting and Exclamation Mark */}
+  <div className="flex items-center text-5xl px-4 md:px-0 md:text-8xl select-none font-bold text-zinc-900 dark:text-white">
+    <TypeAnimation
+      splitter={(str) => splitter.splitGraphemes(str)}
+      sequence={greetings.flatMap((greeting) => [greeting, 2000])}
+      repeat={Infinity}
+      cursor=""
+    />
+    <p className="ml-2 text-5xl md:text-8xl font-bold text-zinc-900 dark:text-white">!</p>
+  </div>
+
+  {/* "Connection" Heading */}
+  <h1 className="mt-4 text-3xl md:text-5xl select-none font-bold text-zinc-900 dark:text-white">
+    Viewers🚀
+  </h1>
+</div>
+
     </div>
   );
 };

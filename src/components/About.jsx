@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="bg-blue-900 text-white ">
+      <div className="grid grid-cols-2 m-20 text-white ">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nihil
       nesciunt fugiat. Quas placeat aspernatur ullam, dolores dicta at dolorem,
       veritatis odit necessitatibus fugiat, commodi fuga aliquid repellendus

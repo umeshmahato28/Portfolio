@@ -22,6 +22,9 @@ const ParticlesComponent = (props) => {
   // Memoize options based on the current theme mode
   const options = useMemo(
     () => ({
+      fullScreen: {
+    enable: false, // Prevent particles from taking over the entire screen
+  },
       background: {
         color: {
           value: "",
@@ -93,16 +96,19 @@ const ParticlesComponent = (props) => {
     }),
     [isDarkMode]
   );
-  return (
-    <div className=" absolute inset-0 ">
+ return (
+  <div className="relative h-[65vh] w-full">
+    {init && (
       <Particles
         id={props.id}
         init={particlesLoaded}
         options={options}
         className="h-full w-full"
       />
-    </div>
-  );
+    )}
+  </div>
+);
+
 };
 
 export default ParticlesComponent;
