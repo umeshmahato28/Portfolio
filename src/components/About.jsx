@@ -3,15 +3,38 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="grid grid-cols-2 m-20 text-white ">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore nihil
-      nesciunt fugiat. Quas placeat aspernatur ullam, dolores dicta at dolorem,
-      veritatis odit necessitatibus fugiat, commodi fuga aliquid repellendus
-      mollitia temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing
-      elit. Mollitia tempore recusandae architecto commodi, inventore sint
-      voluptatem laudantium, id corrupti porro accusantium voluptatibus qui
-      facilis optio beatae alias illum molestiae maiores.
-    </div>
+      <div className="mt-20 flex mx-40  items-center">
+        <div className=" ">
+          <h1 className="font-bold text-xl gap-y-10 dark:text-gray-100">
+            About me
+          </h1>
+          <h2 className="font-bold text-5xl font-mono my-5 dark:text-[#e6a369]">
+            I am Umesh Mahato
+          </h2>
+          <p className="text-xl  dark:text-gray-100/70 w-[75%]">
+            A passionate React developer with 1 year of experience at Tata
+            Consultancy Services. I specialize in React JS, Tailwind CSS, and
+            MongoDB, with a focus on building user-friendly applications and
+            seamless interfaces.
+          </p>
+
+          <p className="text-xl  dark:text-gray-100/70 w-[70%]">
+            In my free time, I enjoy creating memes, designing posters, and
+            building side projects. Let’s connect and collaborate!
+          </p>
+
+          <button className=" h-10 w-2/12 mt-5 font-bold bg-black text-white dark:text-black dark:bg-[#e6a369] rounded-md">
+            Contact me
+          </button>
+        </div>
+        <div>
+          <img
+            className="rounded-lg h-[25rem] w-[52rem]  object-cover"
+            src="https://wallpapercave.com/wp/wp4302732.jpg"
+            alt="photo"
+          />
+        </div>
+      </div>
     </>
   );
 };
