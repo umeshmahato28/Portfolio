@@ -1,5 +1,5 @@
 import React from "react";
-
+import MyImg from '../image/img1.jpg'
 const About = () => {
   return (
     <>
@@ -20,17 +20,17 @@ const About = () => {
 
           <p className="text-xl  dark:text-gray-100/70 w-[70%]">
             In my free time, I enjoy creating memes, designing posters, and
-            building side projects. Let’s connect and collaborate!
+            building side projects. Let's connect and collaborate!
           </p>
 
-          <button className=" h-10 w-2/12 mt-5 font-bold bg-black text-white dark:text-black dark:bg-[#e6a369] rounded-md">
+          <button className=" h-10 w-2/12 mt-5 font-bold  text-white dark:text-black bg-black dark:bg-[#e6a369] shadow-xl shadow-[#e6a369]/50 rounded-md">
             Contact me
           </button>
         </div>
         <div>
           <img
-            className="rounded-lg h-[25rem] w-[52rem]  object-cover"
-            src="https://wallpapercave.com/wp/wp4302732.jpg"
+            className="rounded-full h-[25rem] w-[58rem]  object-cover"
+            src={MyImg}
             alt="photo"
           />
         </div>

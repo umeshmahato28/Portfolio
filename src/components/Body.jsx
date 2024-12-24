@@ -1,7 +1,7 @@
 import React from "react";
 import Greet from "./Greet";
 import About from "./About";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 import Projects from "./Projects";
 
 
@@ -11,7 +11,7 @@ const Body = () => {
       <Greet/>
       <About/>
       <Projects/>
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   );
 };
