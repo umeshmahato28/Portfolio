@@ -2,7 +2,7 @@ import React from "react";
 import MyImg from '../image/img1.jpg'
 const About = () => {
   return (
-    <>
+    <> 
       <div className="mt-20 flex mx-40  items-center">
         <div className=" ">
           <h1 className="font-bold text-xl gap-y-10 dark:text-gray-100">
