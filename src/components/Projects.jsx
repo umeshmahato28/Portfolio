@@ -1,7 +1,7 @@
 import React from "react";
 
 const Projects = () => {
-  return (
+  return ( 
     <div className="mt-10 p-6 m-12 ">
       <h1 className="font-bold text-5xl flex justify-center dark:text-gray-100">
         My Projects
