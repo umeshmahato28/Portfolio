@@ -1,7 +1,7 @@
 import React from "react";
 import MyImg from '../image/img1.jpg'
 const About = () => {
-  return (
+  return ( 
     <> 
       <div className="mt-20 flex mx-40  items-center">
         <div className=" ">
