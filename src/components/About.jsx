@@ -9,7 +9,7 @@ const About = () => {
             About me
           </h1>
           <h2 className="font-bold text-5xl font-mono my-5 dark:text-[#e6a369]">
-            I am Umesh Mahato.
+            I am Umesh Mahato. 
           </h2>
           <p className="text-xl  dark:text-gray-100/70 w-[75%]">
             A passionate React developer with 1 year of experience at Tata

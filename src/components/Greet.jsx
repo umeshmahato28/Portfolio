@@ -32,7 +32,7 @@ const Greet = () => {
   return (
     <div className={` w-full h-96 flex items-center justify-center ${isDarkMode ? "bg-zinc-950" : "bg-[#ECCA9C]"}`}>
       {/* Particles as background */}
-      <ParticlesComponent />
+      <ParticlesComponent /> 
 
       {/* Greeting Text */}
       <div className="absolute z-10 flex flex-col items-center">
@@ -42,7 +42,7 @@ const Greet = () => {
       splitter={(str) => splitter.splitGraphemes(str)}
       sequence={greetings.flatMap((greeting) => [greeting, 2000])}
       repeat={Infinity}
-      cursor=""
+      cursor="" 
     />
     <p className="ml-2 text-5xl md:text-8xl font-bold text-zinc-900 dark:text-white">!</p>
   </div>
